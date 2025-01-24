@@ -1,0 +1,112 @@
+
+
+             /* АНИМАЦИЯ КОРЗИНЫ */
+
+            /* Контейнер корзины */
+.shopping__cart__position {
+    position: relative;
+    display: inline-block;
+}
+
+        /* Иконка корзины */
+#shopping_cart {
+    cursor: pointer;
+    font-size: 30px;
+    color: #333;
+}
+        /* Стиль всплывающего окна */
+.popup {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 230px;
+    display: none; /* Скрыто по умолчанию */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    border-radius: 7px;
+}
+        /* Эффект при наведении на корзину */
+.shopping__cart__position:hover .popup {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+        /* Опциональная анимация для появления всплывающего окна */
+.popup {
+    animation: fadeIn 300ms ease-in-out;
+    text-align: center;
+    opacity: 0.8;   
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+}
+        /* Анимация для плавного появления окна */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+            /* АНИМАЦИЯ ЛИНИИ НА ТЕГАХ "li" В ШАПКЕ */
+
+
+.nav-links ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 90%;
+    height: 2px;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .4s;
+    margin: 5px 5px 3px
+}
+
+.nav-links ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+    transform: translate();
+}
+
+            /* ПОЛЕТ ТОВАРА В КОРЗИНУ */
+
+            @keyframes flyToCart {
+                0% {
+                    transform: translate(0, 0) scale(1);
+                    opacity: 1;
+                }
+                30% {
+                    transform: translate(150px, -50px) scale(0.8);
+                    opacity: 0.9;
+                }
+                100% {
+                    transform: translate(calc(100vw - 120px), calc(-100vh + 60px)) scale(0.5);
+                    opacity: 0;
+                }
+            }
+
+            
+            
+.flying-item {
+    object-fit: contain; /* Изображение сохраняет пропорции и помещается в круг */
+    overflow: hidden; /* Обрезаем лишнее */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Лёгкая тень */
+    border-radius: 50%; /* Круглый контейнер */
+    transition: transform 0.5s ease, border-radius 0.5s ease; /* Плавный переход */
+    width: 80px; /* Размер круга (можно изменить по желанию) */
+    height: 80px; /* Размер круга */
+}
+      

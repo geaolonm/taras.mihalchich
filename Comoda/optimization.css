@@ -1,0 +1,33 @@
+
+
+                /* ЕКРАН ШАПКА */
+
+@media (max-width: 1140px) {.header__nav { display: none; } } 
+
+@media (max-width: 1140px) {.phone{ margin: 10px auto; } .container{ max-width:90%; font-size: 14px;}.user {transform: translate(0px, 5px);}}
+                
+@media (max-width: 860px) {.input__search { font-size: 10px; padding: 8px;} .button__search {font-size: 10px; padding: 8px;} .nav-links{font-size: 12px;} .toprow__nav__container #search {padding-top: 5px;}}
+            
+                /* ЕКРАН ШАПКА */
+ 
+                
+
+            
+                /* КОНТЕЙНЕР С ТОВАРОМ */
+
+/* @media (min-width: 768px) {#content {float: right;}}
+
+@media (min-width: 768px) {.col-sm-9 { width: 75%;}}
+
+@media (min-width: 768px) {.product_row .padding { border: 1px solid #dbdbdb; padding: 11px; border-radius: 4px;}} */
+
+
+
+
+                 /* КАТАЛОГ */
+
+@media (max-width: 1140px) {.box_category {margin-left: 0; max-width:200px ;} .box_category ul li a{font-size: 14px;} }
+
+                 /* КАТАЛОГ */
+
+/* @media (max-width: 1140px) {.col-sm-9 {float: right;} } */

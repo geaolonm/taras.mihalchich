@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comoda</title> 
+    <link rel="icon" href="img/logo/cart.png" style="font-size:100%;" ; type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="optimization.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+</head>
+    <header class="header">
+        <div class="container">
+            <img src="img/logo/logo.png" alt="" class="header__logo">
+              <div class="header__nav">
+                      <div class="adress">                        
+                                  <i class="material-icons" id="location_on">location_on</i>
+                                   <span id="location">г. Днепр, пр-т Александра Поля, 107г</span>       
+                      </div>                               
+      <div class="grafik">
+        <i class='bx bx-time bx-flip-horizontal' id="time"></i>
+                <div class="days">    
+                      <div class="days__work">
+                               <span>Пн - Пт:</span>
+                             <span>9:00 - 18:00</span>
+                      </div>
+                  
+                      <div class="days__work__weekend">
+                         <span>Сб - Вс:</span>
+                         <span>выходные</span>
+                    </div> 
+               </div>                                  
+        </div>
+  </div>
+                     
+     <div class="phone">
+           <i class='bx bxs-phone' id="bx-phone"></i>
+            <span><img src="img/icons/Kyivstar.png" alt="">(067) 509-33-10</span>
+            <span><img src="img/icons/Life.png" alt="">(067) 509-33-10</span>
+            <span><img src="img/icons/Vodafone.png" alt="">(067) 509-33-10</span>
+     </div>        
+
+  <div class="user">
+           <a href="user__login">Вход</a>
+           <a href="user__register">Регистрация</a>
+        <div class="socials">
+           <a href="#" class="facebook";><i class='bx bxl-facebook-square' style='color:#009ae5'></i> </a> 
+           <a href="#" class="gmail"><i class='bx bx-mail-send' style='color:#009ae5'></i></a>
+       </div>
+   </div>
+
+   <div class="shopping__cart__position" id="">
+       <span>
+             <a href="#"></a>
+             <i class="material-icons" id="shopping_cart">shopping_cart</i>
+       </span>
+         <div class="popup">
+                <span>Ваша корзина пуста</span>
+         </div>
+   </div>
+ </div>
+    
+ <div class="toprow__nav__container">
+  <div class="container">
+      <div class="row">
+          <div class="nav-links">
+              <ul>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Каталог</a></li>
+                  <li><a href="#">Акции</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Оплата</a></li>
+                  <li><a href="#">Доставка</a></li>
+                  <li><a href="#">Блог</a></li>
+              </ul>
+          </div>
+    </div> 
+          <div id="search">
+                <!-- Поиск -->
+              <form action="search">
+                  <input type="text" class="input__search" name="q" placeholder="Поиск товара">
+                  <button type="submit" class="button__search"><i class='bx bx-search-alt-2'></i></button>
+              </form>
+              <!-- Поиск (КОНЕЦ) -->
+     </div>  
+  </div>
+ </div>
+ </header>
+              <!-- ОСНОВНАЯ ЧАСТЬ -->
+ <section>
+    <div class="container">
+        <div class="row_content">
+           <aside class=".col-sm-3" id="column-left">
+              <!-- МЕНЮ КАТАЛОГА -->
+               <div class="box_category">
+                  <div class="box_content">
+                     <div id="catalog_menu" class="box_category ">
+                        <!-- МЕНЮ КАТАЛОГА -->
+                         <ul>
+                              <li class="catalog_menu_item parent">
+                                    <i class='bx bx-caret-right'></i>
+                                    <a class="catalog_menu_link" href="#">Аксесуары для ванной</a>
+                                     <div class="tooltip">
+                                          <ul>
+                                                <li>
+                                                       <a href="">Корзина для белья</a>
+                                                </li>
+                                                <li>
+                                                      <a href="">Мыльницы</a>
+                                                </li>
+                                                <li>
+                                                      <a href="">Дозаторы для жидкого мыла</a>
+                                                </li>
+                                                <li>
+                                                      <a href="">Принадлежности для ванной комнаты</a>
+                                                </li>
+                                                <li>
+                                                      <a href="">Ершики, щетки для унитаза</a>
+                                                </li>
+                                                <li>
+                                                      <a href="">Вешалки, крючки для полотенец</a>
+                                                </li>
+                                                <li>
+                                                      <a href="">Держатели для бумаги</a>
+                                                </li>
+                                                <li>
+                                                      <a href="">Карнизы для ванной</a>
+                                                </li>
+                                                <li>
+                                                      <a href="">Шторки для ванной</a>
+                                                </li>
+                                                <li>
+                                                      <a href="">Полки для принадлежностей</a>
+                                                </li>
+                                                <li>
+                                                      <a href="">Коврики для ванной</a>
+                                                </li>                                               
+                                          </ul> 
+                                    </div>
+                              </li>
+                              
+                              <li class="catalog_menu_item parent">
+                                    <i class='bx bx-caret-right'></i>
+                                    <a class="catalog_menu_link" href="#">Ножи и столовые приборы</a>
+                                    <div class="tooltip">
+                                      <ul>
+                                          <li>
+                                                  <a href="">Кухонные ножи</a>
+                                           </li>
+                                          <li>
+                                                 <a href="">Наборы ножей</a>
+                                          </li>
+                                           <li>
+                                                 <a href="">Кухонные ножницы</a>
+                                          </li>                                                          
+                                      </ul>
+                                  </div> 
+                              </li>
+                              
+                              <li class="catalog_menu_item parent">
+                                    <i class='bx bx-caret-right'></i>
+                                    <a class="catalog_menu_link" href="#">Посуда для кухни</a>
+                                    <div class="tooltip">
+                                          <ul>
+                                              <li>
+                                                      <a href="">Сковороды</a>
+                                               </li>
+                                              <li>
+                                                     <a href="">Кастрюли, ковши</a>
+                                              </li>
+                                               <li>
+                                                     <a href="">Сервировка стола</a>
+                                              </li>                                                          
+                                          </ul>
+                                      </div> 
+                              </li>
+                              
+                              <li class="catalog_menu_item parent">
+                                    <i class='bx bx-caret-right'></i>
+                                    <a class="catalog_menu_link" href="#">Аксесуары для кухни</a>
+                                    <div class="tooltip">
+                                          <ul>
+                                              <li>
+                                                      <a href="">Кухонные принадлежности</a>
+                                              </li>
+                                              
+                                               <li>
+                                                     <a href="">Доски розделочные</a>
+                                              </li>
+                                               
+                                              <li>
+                                                     <a href="">Сахарницы</a>
+                                              </li>                          
+                                             
+                                              <li>
+                                                      <a href="">Термостойкая Посуда</a>
+                                               </li>
+                                              
+                                               <li>
+                                                     <a href="">Емкость для сыпучих</a>
+                                              </li>
+                                               
+                                              <li>
+                                                     <a href="">Контейнеры для хранения</a>
+                                              </li>   
+                                              
+                                              <li>
+                                                      <a href="">Дуршлаги и дозаторы</a>
+                                               </li>
+                                              
+                                               <li>
+                                                     <a href="">Миски,салатники,подносы,кувшины</a>
+                                              </li>
+                                               
+                                              <li>
+                                                     <a href="">Ложки и лопатки</a>
+                                              </li>   
+                                              
+                                              <li>
+                                                      <a href="">Сушка и органайзеры для посуды</a>
+                                               </li>
+                                              
+                                               <li>
+                                                     <a href="">Наборы для специй</a>
+                                              </li>
+                                               
+                                              <li>
+                                                     <a href="">Хлебницы</a>
+                                              </li>           
+                                              <li>
+                                                      <a href="">Формы и противни для выпечки</a>
+                                               </li>
+                                              <li>
+                                                     <a href="">Масленки</a>
+                                              </li>
+                                               <li>
+                                                     <a href="">Терки</a>
+                                              </li>          
+                                              <li>
+                                                      <a href="">Тортовницы</a>
+                                               </li>
+                                              <li>
+                                                     <a href="">Кухонные весы</a>
+                                              </li>
+                                               <li>
+                                                     <a href="">Форма для льда</a>
+                                              </li>     
+                                               <li>
+                                                     <a href="">Пищевые контейнеры</a>
+                                              </li>                
+                                          </ul>
+                                      </div> 
+                              </li>
+                              
+                              <li class="catalog_menu_item parent">
+                                    <i class='bx bx-caret-right'></i>
+                                    <a class="catalog_menu_link" href="#">Комплекты постельного белья</a>
+                                    <div class="tooltip">
+                                          <ul>
+                                              <li>
+                                                      <a href="">Детское постельное белье</a>
+                                               </li>                                                                
+                                          </ul>
+                                      </div> 
+                              </li>
+                              
+                              <li class="catalog_menu_item parent">
+                                    <i class='bx bx-caret-right'></i>
+                                    <a class="catalog_menu_link" href="#">Гардероб</a>
+                                    <div class="tooltip">
+                                          <ul>
+                                              <li>
+                                                      <a href="">Вакуумные пакеты</a>
+                                               </li>
+                                              <li>
+                                                     <a href="">Вешкалки для одежды</a>
+                                              </li>
+                                               <li>
+                                                     <a href="">Полки для обуви</a>
+                                              </li>                     
+                                               <li>
+                                                     <a href="">Органайзеры для хранения вещей</a>
+                                              </li>   
+                                               <li>
+                                                     <a href="">Щетки для одежды,обуви</a>
+                                              </li>   
+                                               <li>
+                                                     <a href="">Чехды для одежды</a>
+                                              </li>                                             
+                                          </ul>
+                                      </div> 
+                              </li>
+
+                              
+                              <li class="catalog_menu_item parent">
+                                    <i class='bx bx-caret-right'></i>
+                                    <a class="catalog_menu_link" href="#">Текстиль</a>
+                                    <div class="tooltip">
+                                          <ul>
+                                              <li>
+                                                      <a href="">Махровые полотенца</a>
+                                               </li>
+                                              <li>
+                                                     <a href="">Пляжные полотенца</a>
+                                              </li>                                                          
+                                          </ul>
+                                      </div> 
+                              </li>
+                              
+                              <li class="catalog_menu_item parent">
+                                    <i class='bx bx-caret-right'></i>
+                                    <a class="catalog_menu_link" href="#">Инвентарь для уборки</a>
+                                    <div class="tooltip">
+                                          <ul>
+                                              <li>
+                                                      <a href="">Швабры</a>
+                                               </li>
+                                              <li>
+                                                     <a href="">Веники, метла, совки</a>
+                                              </li>
+                                               <li>
+                                                     <a href="">Тряпочки и салфетки</a>
+                                              </li>
+                                               <li>
+                                                     <a href="">Ведра для уборки</a>
+                                              </li>                                                             
+                                          </ul>
+                                      </div> 
+                              </li>
+                              
+                              <li class="catalog_menu_item parent">
+                                    <i class='bx bx-caret-right'></i>
+                                    <a class="catalog_menu_link" href="#">Инвентарь для хранения</a>
+                                    <div class="tooltip">
+                                          <ul>
+                                              <li>
+                                                      <a href="">Коробки для храниния вещей</a>
+                                               </li>
+                                              <li>
+                                                     <a href="">Ящики для хранения</a>
+                                              </li>
+                                               <li>
+                                                     <a href="">Пластиковые корзины</a>
+                                              </li>     
+                                               <li>
+                                                     <a href="">Плетеные корзины</a>
+                                              </li>  
+                                               <li>
+                                                     <a href="">Пластиковые комоды</a>
+                                              </li>  
+                                               <li>
+                                                     <a href="">Этажерки</a>
+                                              </li>                             
+                                          </ul>
+                                      </div> 
+                              </li>
+                              
+                              <li class="catalog_menu_item parent">
+                                    <i class='bx bx-caret-right'></i>
+                                    <a class="catalog_menu_link" href="#">Хозяйственный инвентарь</a>
+                                    <div class="tooltip">
+                                          <ul>
+                                              <li>
+                                                      <a href="">Пластиковые миски</a>
+                                               </li>
+                                              <li>
+                                                     <a href="">Ведра и корзины</a>
+                                              </li>
+                                               <li>
+                                                     <a href="">Сушилки для белья</a>
+                                              </li>                                  
+                                               <li>
+                                                     <a href="">Гладильные доски</a>
+                                              </li>  
+                                               <li>
+                                                     <a href="">Ведра для краски</a>
+                                              </li>  
+                                               <li>
+                                                     <a href="">Прищепки, бельевые шнуры</a>
+                                              </li>  
+                                               <li>
+                                                     <a href="">Напольные весы</a>
+                                              </li>  
+                                               <li>
+                                                     <a href="">Стремянки и лестницы</a>
+                                              </li>                          
+                                          </ul>
+                                      </div> 
+                              </li>
+                              
+                              <li class="catalog_menu_item parent">
+                                    <i class='bx bx-caret-right'></i>
+                                    <a class="catalog_menu_link" href="#">Сад, Огород</a>
+                                    <div class="tooltip">
+                                          <ul>
+                                              <li>
+                                                      <a href="">Балконные ящики</a>
+                                               </li>
+                                              <li>
+                                                     <a href="">Вазоны для цветов</a>
+                                              </li>
+                                               <li>
+                                                     <a href="">Горшки для цветов</a>
+                                              </li>                              
+                                               <li>
+                                                     <a href="">Лейки, опрыскиватели, аксессуары</a>
+                                              </li>  
+                                               <li>
+                                                     <a href="">Декоративные покрытия</a>
+                                              </li>                              
+                                          </ul>
+                                      </div> 
+                              </li>
+                              
+                              <li class="catalog_menu_item parent">
+                                    <i class='bx bx-caret-right'></i>
+                                    <a class="catalog_menu_link" href="#">Декор для дома</a>
+                                    <div class="tooltip">
+                                          <ul>
+                                              <li>
+                                                      <a href="">Часы настенные</a>
+                                               </li>
+                                              <li>
+                                                     <a href="">Аромат для дома</a>
+                                              </li>
+                                               <li>
+                                                     <a href="">Свечи</a>
+                                              </li>
+                                               <li>
+                                                     <a href="">Подсечники</a>
+                                              </li>  
+                                               <li>
+                                                     <a href="">Вазы</a>
+                                              </li>                                                            
+                                          </ul>
+                                      </div> 
+                              </li>
+                              
+                              <li class="catalog_menu_item parent">
+                                    <i class='bx bx-caret-right'></i>
+                                    <a class="catalog_menu_link" href="#">Твовары для детей</a>
+                                    <div class="tooltip">
+                                          <ul>
+                                              <li>
+                                                      <a href="">Контейнеры для завтраков</a>
+                                               </li>
+                                              <li>
+                                                     <a href="">Ящики для игрушек и вещей</a>
+                                              </li>
+                                               <li>
+                                                     <a href="">Детские термосы для еды</a>
+                                              </li>                                    
+                                               <li>
+                                                     <a href="">Детские термосы</a>
+                                              </li>  
+                                               <li>
+                                                     <a href="">Санки</a>
+                                              </li>  
+                                               <li>
+                                                     <a href="">Бутылки для воды</a>
+                                              </li>  
+                                               <li>
+                                                     <a href="">Детские горшки, сиденья и подставки</a>
+                                              </li>                        
+                                          </ul>
+                                      </div> 
+                              </li>
+                              
+                              <li class="catalog_menu_item parent">
+                                    <!-- <i class='bx bx-caret-right'></i> -->
+                                    <a class="catalog_menu_link" href="#">Товары для животных</a>
+                                    
+                              
+                              <li class="catalog_menu_item parent">
+                                    <i class='bx bx-caret-right'></i>
+                                    <a class="catalog_menu_link" href="#">Ящики для инструментов</a>
+                                    <div class="tooltip">
+                                          <ul>
+                                              <li>
+                                                      <a href="">Ящики для инструментов</a>
+                                               </li>
+                                              <li>
+                                                     <a href="">Ящики для метизов и мелочей</a>
+                                              </li>                                                    
+                                          </ul>
+                                      </div> 
+                              </li>
+                              
+                              <li class="catalog_menu_item parent">
+                                    <i class='bx bx-caret-right'></i>
+                                    <a class="catalog_menu_link" href="#">Товары для пикника</a>
+                                    <div class="tooltip">
+                                          <ul>
+                                              <li>
+                                                      <a href="">Посуда для пикника</a>
+                                               </li>
+                                              <li>
+                                                     <a href="">Термопродукция</a>
+                                              </li>
+                                               <li>
+                                                     <a href="">Все для барбекю</a>
+                                              </li>                                
+                                               <li>
+                                                     <a href="">Мебель для пикника</a>
+                                              </li>  
+                                               <li>
+                                                     <a href="">Пляжные коврики</a>
+                                              </li>                           
+                                          </ul>
+                                      </div> 
+                              </li>
+                              
+                              <li class="catalog_menu_item parent">
+                                    <!-- <i class='bx bx-caret-right'></i> -->
+                                    <a class="catalog_menu_link" href="#"> Спорт и увлечения</a>
+                                   
+                              
+                              <li class="catalog_menu_item parent">
+                                    <!-- <i class='bx bx-caret-right'></i> -->
+                                    <a class="catalog_menu_link" href="#">Алкогольные напои и продукты</a>                          
+                              </li>
+                         </ul>
+                     </div>
+                  </div>
+               </div>
+           </aside>
+        
+        <div class=".col-sm-9" id="content">
+              <div class="box">
+                    <div class="box_start_line">Рекомендуемые товары</div>
+                       <div class="box_content">
+                           <div class="box_product">
+                         <!-- Товар  -->
+                           <ul class="box_product_row">
+                              <li class="product_row">
+                                <div class="padding">
+                                    <div class="image">
+                                          <a href="#">
+                                                <img id="img" src="img/image_product/Набор бокалов для джин тоника HARMONY 700мл, 6 шт.jpg" title="Набор бокалов для джин тоника HARMONY 700мл, 6 шт" alt="Набор бокалов для джин тоника HARMONY 700мл, 6 шт">
+                                          </a>  
+                                      <form action="/cart" class="variants_inner">
+                                          <div class="price">
+                                                <table>
+                                                      <tbody>
+                                                            <tr class="variant">
+                                                                  <td>
+                                                                        <span class="price"> 1750
+                                                                              <span class="currency">грн</span>
+                                                                        </span>
+                                                                  </td>
+                                                            </tr>
+                                                      </tbody>
+                                                </table>
+                                                <h3 class="max_height_head">
+                                                      <a data-product="" href="#">Набор бокалов для джин тоника HARMONY 700мл, 6 шт</a>
+                                                </h3>
+                                          </div>
+                                      <!-- btn cart_button -->
+                                          <div class="cart_button">
+                                                <button type="submit" class="button" id="box_content"  title="">
+                                                      <i class="material-icons" id="shopping_cart">shopping_cart</i>
+                                                      <span class="buy">Купить</span>
+                                                </button>
+                                                 <a href="#" class="details">Подробнее</a>                                        
+                                          </div>
+                                    </form>
+                                    
+                                          
+                                    </div>
+                                </div>
+                             </li>
+                                
+                         <li class="product_row">
+                               <div class="padding">
+                                    <div class="image">
+                                          <a href="#">
+                                                 <img id="img" src="img/image_product/Набор бокалов для шампанского KRISTA DECO 150мл, 6 шт.jpg" title="Набор бокалов для шампанского KRISTA DECO 150мл, 6 шт" alt="Набор бокалов для шампанского KRISTA DECO 150мл, 6 шт">
+                                            </a>  
+                                            <form action="/cart" class="variants_inner">
+                                                <div class="price">
+                                                      <table>
+                                                            <tbody>
+                                                                  <tr class="variant">
+                                                                        <td>
+                                                                              <span class="price"> 1750
+                                                                                    <span class="currency">грн</span>
+                                                                              </span>
+                                                                        </td>
+                                                                  </tr>
+                                                            </tbody>
+                                                      </table>
+                                                      <h3 class="max_height_head">
+                                                            <a data-product="" href="#">Набор бокалов для джин тоника HARMONY 700мл, 6 шт</a>
+                                                      </h3>
+                                                </div>
+                                            <!-- btn cart_button -->
+                                                <div class="cart_button">
+                                                      <button type="submit" class="button" id="box_content"  title="Добавить в корзину">
+                                                            <i class="material-icons" id="shopping_cart">shopping_cart</i>
+                                                            <span class="buy">Купить</span>
+                                                      </button>
+                                                       <a href="#" class="details">Подробнее</a>                                        
+                                                </div>
+                                          </form>
+                                     </div>                     
+                               </div>
+                         </li>
+                               
+                         <li class="product_row">
+                               <div class="padding">
+                                    <div class="image">
+                                          <a href="#">
+                                                <img src="img/image_product/Емкость стеклянная для хранения с пластиковой крышкой.jpg" title="Емкость стеклянная для хранения с пластиковой крышкой" alt="Емкость стеклянная для хранения с пластиковой крышкой">
+                                          </a>
+                                          <form action="/cart" class="variants_inner">
+                                                <div class="price">
+                                                      <table>
+                                                            <tbody>
+                                                                  <tr class="variant">
+                                                                        <td>
+                                                                              <span class="price"> 1750
+                                                                                    <span class="currency">грн</span>
+                                                                              </span>
+                                                                        </td>
+                                                                  </tr>
+                                                            </tbody>
+                                                      </table>
+                                                      <h3 class="max_height_head">
+                                                            <a data-product="" href="#">Набор бокалов для джин тоника HARMONY 700мл, 6 шт</a>
+                                                      </h3>
+                                                </div>
+                                            <!-- btn cart_button -->
+                                                <div class="cart_button">
+                                                      <button type="submit" class="button" id="box_content"  title="Добавить в корзину">
+                                                            <i class="material-icons" id="shopping_cart">shopping_cart</i>
+                                                            <span class="buy">Купить</span>
+                                                      </button>
+                                                       <a href="#" class="details">Подробнее</a>                                        
+                                                </div>
+                                          </form>
+                                    </div>
+                              </div>  
+                         </li>
+                                                                      
+                         <li class="product_row">
+                               <div class="padding">
+                                    <div class="image">
+                                          <a href="#">
+                                                <img src="img/image_product/Этажерка Джамбо ЕСО на колесиках серая.jpg" title="Этажерка Джамбо ЕСО на колесиках серая" alt="Этажерка Джамбо ЕСО на колесиках серая">
+                                          </a>
+                                          <form action="/cart" class="variants_inner">
+                                                <div class="price">
+                                                      <table>
+                                                            <tbody>
+                                                                  <tr class="variant">
+                                                                        <td>
+                                                                              <span class="price"> 1750
+                                                                                    <span class="currency">грн</span>
+                                                                              </span>
+                                                                        </td>
+                                                                  </tr>
+                                                            </tbody>
+                                                      </table>
+                                                      <h3 class="max_height_head">
+                                                            <a data-product="" href="#">Набор бокалов для джин тоника HARMONY 700мл, 6 шт</a>
+                                                      </h3>
+                                                </div>
+                                            <!-- btn cart_button -->
+                                                <div class="cart_button">
+                                                      <button type="submit" class="button" id="box_content"  title="Добавить в корзину">
+                                                            <i class="material-icons" id="shopping_cart">shopping_cart</i>
+                                                            <span class="buy">Купить</span>
+                                                      </button>
+                                                       <a href="#" class="details">Подробнее</a>                                        
+                                                </div>
+                                          </form>
+                                    </div>
+                              </div>
+                         </li> 
+                     
+                         <li class="product_row">
+                               <div class="padding">
+                                    <div class="image">
+                                          <a href="#">
+                                                <img src="img/image_product/Корзинка Seoul L голубой.jpg" title="Корзинка Seoul L голубой" alt="Корзинка Seoul L голубой">
+                                          </a>
+                                          <form action="/cart" class="variants_inner">
+                                                <div class="price">
+                                                      <table>
+                                                            <tbody>
+                                                                  <tr class="variant">
+                                                                        <td>
+                                                                              <span class="price"> 1750
+                                                                                    <span class="currency">грн</span>
+                                                                              </span>
+                                                                        </td>
+                                                                  </tr>
+                                                            </tbody>
+                                                      </table>
+                                                      <h3 class="max_height_head">
+                                                            <a data-product="" href="#">Набор бокалов для джин тоника HARMONY 700мл, 6 шт</a>
+                                                      </h3>
+                                                </div>
+                                            <!-- btn cart_button -->
+                                                <div class="cart_button">
+                                                      <button type="submit" class="button" id="box_content"  title="Добавить в корзину">
+                                                            <i class="material-icons" id="shopping_cart">shopping_cart</i>
+                                                            <span class="buy">Купить</span>
+                                                      </button>
+                                                       <a href="#" class="details">Подробнее</a>                                        
+                                                </div>
+                                          </form>
+                                    </div>
+                              </div>
+                         </li>
+                      
+                         <li class="product_row">
+                               <div class="padding">
+                                    <div class="image">
+                                          <a href="#">
+                                                <img src="img/image_product/Набор картонных ящиков для хранения XL London 2шт.jpg" title="Набор картонных ящиков для хранения XL London" alt="Набор картонных ящиков для хранения XL London">
+                                          </a>
+                                          <form action="/cart" class="variants_inner">
+                                                <div class="price">
+                                                      <table>
+                                                            <tbody>
+                                                                  <tr class="variant">
+                                                                        <td>
+                                                                              <span class="price"> 1750
+                                                                                    <span class="currency">грн</span>
+                                                                              </span>
+                                                                        </td>
+                                                                  </tr>
+                                                            </tbody>
+                                                      </table>
+                                                      <h3 class="max_height_head">
+                                                            <a data-product="" href="#">Набор бокалов для джин тоника HARMONY 700мл, 6 шт</a>
+                                                      </h3>
+                                                </div>
+                                            <!-- btn cart_button -->
+                                                <div class="cart_button">
+                                                      <button type="submit" class="button" id="box_content"  title="Добавить в корзину">
+                                                            <i class="material-icons" id="shopping_cart">shopping_cart</i>
+                                                            <span class="buy">Купить</span>
+                                                      </button>
+                                                       <a href="#" class="details">Подробнее</a>                                        
+                                                </div>
+                                          </form>
+                                    </div>
+                              </div>
+                         </li>
+                      
+                         <li class="product_row">
+                               <div class="padding">
+                                    <div class="image">
+                                          <a href="#">
+                                                <img src="img/image_product/Комплект емкостей для морозилки прямоугольный.jpg" title="Комплект емкостей для морозилки прямоугольный" alt="Комплект емкостей для морозилки прямоугольный">
+                                          </a>
+                                          <form action="/cart" class="variants_inner">
+                                                <div class="price">
+                                                      <table>
+                                                            <tbody>
+                                                                  <tr class="variant">
+                                                                        <td>
+                                                                              <span class="price"> 1750
+                                                                                    <span class="currency">грн</span>
+                                                                              </span>
+                                                                        </td>
+                                                                  </tr>
+                                                            </tbody>
+                                                      </table>
+                                                      <h3 class="max_height_head">
+                                                            <a data-product="" href="#">Набор бокалов для джин тоника HARMONY 700мл, 6 шт</a>
+                                                      </h3>
+                                                </div>
+                                            <!-- btn cart_button -->
+                                                <div class="cart_button">
+                                                      <button type="submit" class="button" id="box_content"  title="Добавить в корзину">
+                                                            <i class="material-icons" id="shopping_cart">shopping_cart</i>
+                                                            <span class="buy">Купить</span>
+                                                      </button>
+                                                       <a href="#" class="details">Подробнее</a>                                        
+                                                </div>
+                                          </form>
+                                    </div>
+                              </div>
+                         </li>
+                      
+                         <li class="product_row">
+                               <div class="padding">
+                                    <div class="image">
+                                          <a href="#">
+                                                <img src="img/image_product/Комод на 4 ящика RATTAN мини белый.jpg" title="Комод на 4 ящика RATTAN мини белый" alt="Комод на 4 ящика RATTAN мини белый">
+                                          </a>
+                                          <form action="/cart" class="variants_inner">
+                                                <div class="price">
+                                                      <table>
+                                                            <tbody>
+                                                                  <tr class="variant">
+                                                                        <td>
+                                                                              <span class="price"> 1750
+                                                                                    <span class="currency">грн</span>
+                                                                              </span>
+                                                                        </td>
+                                                                  </tr>
+                                                            </tbody>
+                                                      </table>
+                                                      <h3 class="max_height_head">
+                                                            <a data-product="" href="#">Набор бокалов для джин тоника HARMONY 700мл, 6 шт</a>
+                                                      </h3>
+                                                </div>
+                                            <!-- btn cart_button -->
+                                                <div class="cart_button">
+                                                      <button type="submit" class="button" id="box_content"  title="Добавить в корзину">
+                                                            <i class="material-icons" id="shopping_cart">shopping_cart</i>
+                                                            <span class="buy">Купить</span>
+                                                      </button>
+                                                       <a href="#" class="details">Подробнее</a>                                        
+                                                </div>
+                                          </form>
+                                    </div>
+                              </div>
+                         </li> 
+                     
+                          <li class="product_row">
+                               <div class="padding">
+                                    <div class="image">
+                                          <a href="#">
+                                                <img src="img/image_product/Набор для специй 3 предмета President Line 3х120мл.jpg" title="Набор для специй 3 предмета President Line" alt="Набор для специй 3 предмета President Line">
+                                          </a>
+                                          <form action="/cart" class="variants_inner">
+                                                <div class="price">
+                                                      <table>
+                                                            <tbody>
+                                                                  <tr class="variant">
+                                                                        <td>
+                                                                              <span class="price"> 1750
+                                                                                    <span class="currency">грн</span>
+                                                                              </span>
+                                                                        </td>
+                                                                  </tr>
+                                                            </tbody>
+                                                      </table>
+                                                      <h3 class="max_height_head">
+                                                            <a data-product="" href="#">Набор бокалов для джин тоника HARMONY 700мл, 6 шт</a>
+                                                      </h3>
+                                                </div>
+                                            <!-- btn cart_button -->
+                                                <div class="cart_button">
+                                                      <button type="submit" class="button" id="box_content"  title="Добавить в корзину">
+                                                            <i class="material-icons" id="shopping_cart">shopping_cart</i>
+                                                            <span class="buy">Купить</span>
+                                                      </button>
+                                                       <a href="#" class="details">Подробнее</a>                                        
+                                                </div>
+                                          </form>
+                                    </div>
+                              </div>
+                          </li>
+                     
+                         <li class="product_row">
+                               <div class="padding">
+                                    <div class="image">
+                                          <a href="#">
+                                                <img src="img/image_product/Набор для специй 10 предметов President Line.png" title="Набор для специй 10 предметов President Line" alt="Набор для специй 10 предметов President Line">
+                                          </a>
+                                          <form action="/cart" class="variants_inner">
+                                                <div class="price">
+                                                      <table>
+                                                            <tbody>
+                                                                  <tr class="variant">
+                                                                        <td>
+                                                                              <span class="price"> 1750
+                                                                                    <span class="currency">грн</span>
+                                                                              </span>
+                                                                        </td>
+                                                                  </tr>
+                                                            </tbody>
+                                                      </table>
+                                                      <h3 class="max_height_head">
+                                                            <a data-product="" href="#">Набор бокалов для джин тоника HARMONY 700мл, 6 шт</a>
+                                                      </h3>
+                                                </div>
+                                            <!-- btn cart_button -->
+                                                <div class="cart_button">
+                                                      <button type="submit" class="button" id="box_content"  title="Добавить в корзину">
+                                                            <i class="material-icons" id="shopping_cart">shopping_cart</i>
+                                                            <span class="buy">Купить</span>
+                                                      </button>
+                                                       <a href="#" class="details">Подробнее</a>                                        
+                                                </div>
+                                          </form>
+                                    </div>
+                              </div>
+                         </li>
+                     
+                          <li class="product_row">
+                               <div class="padding">
+                                    <div class="image">
+                                          <a href="#">
+                                                <img src="img/image_product/vedro-tualet 22l 1306.200x200.jpg" title="Ведро-туалет 22л" alt="Ведро-туалет 22л">
+                                          </a>
+                                          <form action="/cart" class="variants_inner">
+                                                <div class="price">
+                                                      <table>
+                                                            <tbody>
+                                                                  <tr class="variant">
+                                                                        <td>
+                                                                              <span class="price"> 1750
+                                                                                    <span class="currency">грн</span>
+                                                                              </span>
+                                                                        </td>
+                                                                  </tr>
+                                                            </tbody>
+                                                      </table>
+                                                      <h3 class="max_height_head">
+                                                            <a data-product="" href="#">Набор бокалов для джин тоника HARMONY 700мл, 6 шт</a>
+                                                      </h3>
+                                                </div>
+                                            <!-- btn cart_button -->
+                                                <div class="cart_button">
+                                                      <button type="submit" class="button" id="box_content"  title="Добавить в корзину">
+                                                            <i class="material-icons" id="shopping_cart">shopping_cart</i>
+                                                            <span class="buy">Купить</span>
+                                                      </button>
+                                                       <a href="#" class="details">Подробнее</a>                                        
+                                                </div>
+                                          </form>
+                                    </div>
+                              </div>
+                          </li>
+                      
+                          <li class="product_row">
+                               <div class="padding">
+                                    <div class="image">
+                                          <a href="#">
+                                                <img src="img/image_product/Комплект для уборки ТОП МОП .jpg" title="Комплект для уборки ТОП МОП" alt="Комплект для уборки ТОП МОП">
+                                          </a>
+                                          <form action="/cart" class="variants_inner">
+                                                <div class="price">
+                                                      <table>
+                                                            <tbody>
+                                                                  <tr class="variant">
+                                                                        <td>
+                                                                              <span class="price"> 1750
+                                                                                    <span class="currency">грн</span>
+                                                                              </span>
+                                                                        </td>
+                                                                  </tr>
+                                                            </tbody>
+                                                      </table>
+                                                      <h3 class="max_height_head">
+                                                            <a data-product="" href="#">Набор бокалов для джин тоника HARMONY 700мл, 6 шт</a>
+                                                      </h3>
+                                                </div>
+                                            <!-- btn cart_button -->
+                                                <div class="cart_button">
+                                                      <button type="submit" class="button" id="box_content"  title="Добавить в корзину">
+                                                            <i class="material-icons" id="shopping_cart">shopping_cart</i>
+                                                            <span class="buy">Купить</span>
+                                                      </button>
+                                                       <a href="#" class="details">Подробнее</a>                                        
+                                                </div>
+                                          </form>
+                                    </div>
+                              </div>
+                          </li>
+                           </ul>
+                      
+                     </div>
+                  </div>
+              </div>
+           </div> 
+        </div>
+    </div>
+ </section>
+
+
+
+   
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  </body>
+</html>
+
+
